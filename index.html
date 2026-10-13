@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olist E-Commerce Sales Analysis</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f8fc;color:#132b49}
+header{background:#102b46;color:white;padding:22px 6%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+header h2{margin:0}
+header a{color:white;text-decoration:none;margin:8px}
+.hero{padding:55px 6%;background:linear-gradient(120deg,#e5f2ff,#fff); }
+.hero h1{font-size:clamp(30px,4vw,48px);margin:8px 0}
+.hero span{color:#1877ed}
+.hero p{font-size:18px;line-height:1.6;max-width:750px}
+.btn{display:inline-block;background:#1877ed;color:white;padding:13px 20px;border-radius:8px;text-decoration:none;margin:8px 8px 0 0}
+section{padding:25px 4%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.card{background:white;padding:22px;border:1px solid #e0e9f4;border-radius:14px;box-shadow:0 4px 16px #1231}
+.metric{font-size:25px;font-weight:bold;margin-top:10px;overflow-wrap:anywhere}
+.label{color:#52657b}
+h2{margin-top:0}
+.panel{background:white;border:1px solid #e0e9f4;border-radius:14px;padding:24px;margin-bottom:18px}
+.bar{height:14px;background:#e6edf6;border-radius:10px;overflow:hidden;margin:8px 0 16px}
+.fill{height:100%;background:linear-gradient(90deg,#1877ed,#34b6ce);border-radius:10px}
+footer{text-align:center;padding:28px;background:#102b46;color:white}
+.small{color:#52657b;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <h2>🛒 Olist Analytics</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#about">About</a>
+    <a href="#dataset">Dataset</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <p><b>SYNTEXCHUB INTERNSHIP PROJECT</b></p>
+  <h1>Olist E-Commerce <span>Sales Analysis</span></h1>
+  <p>Exploring historical Brazilian e-commerce data to understand sales, product categories, customer reviews, regional performance and delivery trends.</p>
+  <a class="btn" href="https://github.com/Noorjahat-Afreen/Syntecxhub_Olist_Sales_Analysis">View on GitHub</a>
+  <a class="btn" href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Explore Dataset</a>
+  <p class="small">Historical dataset • 2016–2018 • Python, Pandas & Matplotlib</p>
+</div>
+
+<section id="analysis">
+  <div class="grid">
+    <div class="card"><div class="label">Total Item Sales</div><div class="metric">R$ 13.59M</div></div>
+    <div class="card"><div class="label">Total Orders</div><div class="metric">98,666</div></div>
+    <div class="card"><div class="label">Items Sold</div><div class="metric">112,650</div></div>
+    <div class="card"><div class="label">Five-Star Reviews</div><div class="metric">57,328</div></div>
+    <div class="card"><div class="label">On-Time/Early Delivery</div><div class="metric">91.89%</div></div>
+    <div class="card"><div class="label">Late Delivery</div><div class="metric">8.11%</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Delivery Performance</h2>
+    <p>On-time or early deliveries — 91.89%</p>
+    <div class="bar"><div class="fill" style="width:91.89%"></div></div>
+    <p>Late deliveries — 8.11%</p>
+    <div class="bar"><div class="fill" style="width:8.11%"></div></div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Project Objectives</h2>
+      <ul>
+        <li>Analyze sales and order volume</li>
+        <li>Identify top product categories and states</li>
+        <li>Understand customer review ratings</li>
+        <li>Evaluate delivery performance</li>
+      </ul>
+    </div>
+    <div class="panel" id="dataset">
+      <h2>Dataset</h2>
+      <p>Olist Brazilian E-Commerce Dataset from Kaggle.</p>
+      <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Open dataset →</a>
+      <p class="small">Historical public data, not live company data.</p>
+    </div>
+    <div class="panel" id="about">
+      <h2>Tools & Technologies</h2>
+      <p>Python • Pandas • Matplotlib • Google Colab • Jupyter Notebook</p>
+      <h3>Key Finding</h3>
+      <p>São Paulo (SP) was the highest-sales state in the earlier analysis.</p>
+    </div>
+  </div>
+  <p class="small">Note: Figures are from the earlier analysis and should be verified against the final notebook before submission.</p>
+</section>
+
+<footer>
+  <p>Olist E-Commerce Sales Analysis</p>
+  <p>Created by Noorjahat Afreen | Syntecxhub Internship</p>
+</footer>
+</body>
+</html>
